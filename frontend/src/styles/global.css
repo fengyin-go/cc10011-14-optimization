@@ -35,3 +35,35 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 限速调节 - 额度切换工作台 */
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--border); background: #fbfcfe; flex-wrap: wrap; }
+.panel-head h3 { margin: 0; font-size: 14px; }
+.panel-sub { color: var(--muted); font-size: 12px; }
+.panel-body { padding: 12px 14px; }
+.config-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 16px; margin: 0 0 12px; }
+.config-grid dt { font-size: 12px; color: var(--muted); }
+.config-grid dd { margin: 2px 0 0; font-size: 13px; font-weight: 600; }
+.form-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 16px; }
+.form-grid .filter-item input, .form-grid .filter-item select, .inline-form .filter-item input { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.inline-form { display: flex; gap: 10px; align-items: flex-end; padding: 10px 14px; border-top: 1px solid var(--border); }
+.inline-form .filter-item { flex: 0 0 260px; }
+.hint-text { font-size: 12px; color: var(--muted); margin: 8px 0; }
+.row-actions.wrap { flex-wrap: wrap; }
+.notice-bar { border-radius: 6px; padding: 8px 12px; font-size: 13px; margin: 0 0 12px; }
+.notice-ok { background: #ecfdf3; border: 1px solid #75e0a7; color: #027a48; }
+.notice-error { background: #fef3f2; border: 1px solid #fda29b; color: #b42318; }
+.tag { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 11px; margin-left: 4px; white-space: nowrap; }
+.tag-old { background: #fff4ed; color: #b93815; border: 1px solid #f9dbaf; }
+.tag-new { background: #eff8ff; color: #175cd3; border: 1px solid #b2ddff; }
+.tag-live { background: #ecfdf3; color: #027a48; border: 1px solid #75e0a7; }
+.tag-down { background: #fef3f2; color: #b42318; border: 1px solid #fda29b; }
+.tag-pending { background: #fffaeb; color: #b54708; border: 1px solid #fedf89; }
+.tag-done { background: #f2f4f7; color: #475467; border: 1px solid #d0d5dd; }
+.row-effective { background: #f5fbff; }
+.detail-row > td { background: #fbfcfe; padding: 0; }
+.detail-box { padding: 12px 14px; }
+.sub-table { margin-top: 8px; }
+.page-actions { display: flex; gap: 8px; }
+@media (max-width: 1100px) { .config-grid, .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

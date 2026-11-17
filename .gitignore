@@ -85,3 +85,6 @@ desktop.ini
 *.db
 *.pid
 *.seed
+
+# ===== 限速域测试临时产物 =====
+.tmp-ratelimit-test/
